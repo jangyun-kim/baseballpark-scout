@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "baseballpark-scout zoom reporter",
+  "version": "0.1.0",
+  "description": "활성 탭의 확대 배율만 로컬 앱으로 전달합니다. 페이지 내용에는 접근하지 않습니다.",
+  "permissions": ["tabs"],
+  "background": { "service_worker": "background.js" }
+}

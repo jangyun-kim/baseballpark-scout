@@ -1,0 +1,1003 @@
+{
+  "_schema_version": "0.2.0",
+  "_updated": "2026-08-26",
+  "_shade_rule": "그늘 판정: |태양방위각 - facing_bearing| 이 90도를 넘으면 그늘. 관중은 등 뒤 상단 구조물에 가려짐.",
+  "_view_layers": {
+    "official_view_warning": "예매처가 좌석도에 직접 표기한 구조물성 시야방해 (중계카메라, 안전유리, 홈런볼대 등). 출처 확실.",
+    "surveyed_obstruction": "사용자 실측 기록. 기둥/그물/응원단상 등 표기되지 않는 간섭.",
+    "avoid_rows": "회피를 권고하는 열 구간.",
+    "sweet_rows": "실측상 가장 권장되는 열 구간."
+  },
+  "stadiums": {
+    "daegu": {
+      "name": "대구 삼성 라이온즈 파크",
+      "aliases": [
+        "라팍",
+        "삼성라이온즈파크"
+      ],
+      "home_team": "삼성 라이온즈",
+      "ticketing_site": "티켓링크",
+      "lat": 35.841,
+      "lon": 128.6816,
+      "coord_confidence": 0.7,
+      "home_to_center_bearing": 67.5,
+      "bearing_confidence": 0.45,
+      "home_cheer_side": "3B",
+      "away_cheer_side": "1B",
+      "facing": {
+        "1B": 337.5,
+        "3B": 157.5,
+        "CENTER": 67.5,
+        "OF": 247.5
+      },
+      "seat_numbering": {
+        "pattern": "구역 + 열 + 번",
+        "gate_label": "3루 N / 1루 N 형식으로 구역마다 게이트 매핑",
+        "note": "하단 내야 계열 최대 34열, SKY 계열 최대 23열. 익사이팅 12열.",
+        "zone_confirmed": "블루존 1~7구역 확정. SKY 지정석은 1루(AWAY)측 1구역 ~ 3루(HOME)측 31구역 연번."
+      },
+      "global_notes": [
+        "1루 내야지정석은 입지 특성상 직사광 정면 - 주말 낮경기 회피 대상",
+        "2026시즌 기둥 12개 추가 설치 - 블루존 전 구역에 영향 확인됨",
+        "출입구가 일부 구역 3~4열 부근을 관통 - 통행 간섭 발생",
+        "그늘 판정 보류: 방위각 재측정 전까지 라팍 그늘 계산 결과를 신뢰하지 말 것"
+      ],
+      "blocks": [
+        {
+          "id": "daegu_bluezone_1",
+          "grade": "블루존",
+          "zone": "1구역",
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "7-11열 (그물 간섭 극심), 7열 1번 (바로 앞 기둥)",
+          "caution_rows": "12-19열 (그물 간섭 잔존)",
+          "sweet_rows": "20열 이후",
+          "view_score": 0.48,
+          "immersion_score": 0.88,
+          "logistics_score": 0.6,
+          "difficulty": 0.72,
+          "note": "좌측 외야 일부 가려짐. 블루존 중 시야 최하위.",
+          "confidence": 0.88
+        },
+        {
+          "id": "daegu_bluezone_2",
+          "grade": "블루존",
+          "zone": "2구역",
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "row_start": 5,
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "partial"
+          },
+          "avoid_rows": "5-6열 앞번호 / 7-18열 중간번호 (2루 베이스 기둥 간섭)",
+          "caution_rows": "전열 후반번호 (1-3루 베이스 기둥 간섭)",
+          "sweet_rows": "19열 이후 중간번호",
+          "view_score": 0.55,
+          "immersion_score": 0.9,
+          "logistics_score": 0.62,
+          "difficulty": 0.78,
+          "note": "중계 카메라 노출 잦음. 기둥 간섭이 번호대별로 갈림.",
+          "confidence": 0.9
+        },
+        {
+          "id": "daegu_bluezone_3",
+          "grade": "블루존",
+          "zone": "3구역",
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "partial"
+          },
+          "avoid_rows": "전열 (좌측 외야 가려짐, 기둥 간섭)",
+          "caution_rows": "5-26열 (치어리더 간섭 예상)",
+          "sweet_rows": "27열 이후",
+          "view_score": 0.66,
+          "immersion_score": 0.92,
+          "logistics_score": 0.62,
+          "difficulty": 0.82,
+          "note": "응원단상 시야 양호. 응원 몰입 최우선일 때 상위.",
+          "confidence": 0.9
+        },
+        {
+          "id": "daegu_bluezone_4",
+          "grade": "블루존",
+          "zone": "4구역",
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "partial"
+          },
+          "avoid_rows": "전열 (좌측 외야 가려짐, 기둥 간섭)",
+          "caution_rows": "5-26열",
+          "sweet_rows": "27열 이후",
+          "view_score": 0.68,
+          "immersion_score": 0.92,
+          "logistics_score": 0.64,
+          "difficulty": 0.8,
+          "note": "응원단상 시야 최상.",
+          "confidence": 0.9
+        },
+        {
+          "id": "daegu_bluezone_5",
+          "grade": "블루존",
+          "zone": "5구역",
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "partial"
+          },
+          "avoid_rows": "전열 (좌측 외야 가려짐, 기둥 간섭)",
+          "caution_rows": "4-30열",
+          "sweet_rows": "31열 이후",
+          "view_score": 0.6,
+          "immersion_score": 0.88,
+          "logistics_score": 0.62,
+          "difficulty": 0.72,
+          "note": "응원단상 간섭 구간이 30열까지로 넓음.",
+          "confidence": 0.88
+        },
+        {
+          "id": "daegu_bluezone_6",
+          "grade": "블루존",
+          "zone": "6구역",
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "blocked"
+          },
+          "avoid_rows": "4-16열 (응원단상 간섭 극심)",
+          "caution_rows": "17-26열",
+          "sweet_rows": "27열 이후",
+          "view_score": 0.52,
+          "immersion_score": 0.86,
+          "logistics_score": 0.62,
+          "difficulty": 0.68,
+          "note": "응원단상 간섭이 블루존 중 가장 심함.",
+          "confidence": 0.88
+        },
+        {
+          "id": "daegu_bluezone_7",
+          "grade": "블루존",
+          "zone": "7구역",
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "partial"
+          },
+          "avoid_rows": "없음",
+          "caution_rows": "4-16열 (응원단상 간섭 있으나 플레이 관람 양호)",
+          "sweet_rows": "4열 이후 전 구간",
+          "view_score": 0.72,
+          "immersion_score": 0.82,
+          "logistics_score": 0.62,
+          "difficulty": 0.62,
+          "note": "실측상 블루존 내 시야 최상. 확보 난이도도 명당 대비 낮아 가성비 최고.",
+          "confidence": 0.9
+        },
+        {
+          "id": "daegu_infield_3b_8",
+          "grade": "3루 내야지정석",
+          "zone": "8구역",
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "1열 1-3번 (기둥이 완전히 가림)",
+          "caution_rows": "1-3열 (그물 간섭)",
+          "sweet_rows": "4열 이후",
+          "view_score": 0.74,
+          "immersion_score": 0.78,
+          "logistics_score": 0.7,
+          "difficulty": 0.55,
+          "note": "그늘 측 안전판. 1열만 피하면 무난.",
+          "confidence": 0.88
+        },
+        {
+          "id": "daegu_infield_table_3b",
+          "grade": "3루 내야테이블석(지브로존)",
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "3구역 1열 9번 (앞 기둥)",
+          "caution_rows": "1-2열 (그물 간섭)",
+          "sweet_rows": "3열 이후",
+          "view_score": 0.78,
+          "immersion_score": 0.78,
+          "logistics_score": 0.85,
+          "difficulty": 0.65,
+          "note": "2인 관람 시 유력. 앞열만 피하면 양호.",
+          "confidence": 0.88
+        },
+        {
+          "id": "daegu_center_table",
+          "grade": "중앙 테이블석",
+          "side": "CENTER",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "none",
+            "net": "partial",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "1열 (VIP석에 가려짐)",
+          "caution_rows": "1-2열 (그물 불편)",
+          "sweet_rows": "3열 이후",
+          "view_score": 0.86,
+          "immersion_score": 0.8,
+          "logistics_score": 0.85,
+          "difficulty": 0.85,
+          "note": "기둥 간섭 없음. 3열 이후면 라팍 최상급 시야.",
+          "confidence": 0.9
+        },
+        {
+          "id": "daegu_exciting_3b",
+          "grade": "3루 익사이팅석",
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "field",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "blocked",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "3-5열 (기둥 간섭 심함), 3구역 3열 1번",
+          "caution_rows": "전열 (그물 방해 심함)",
+          "sweet_rows": null,
+          "view_score": 0.38,
+          "immersion_score": 0.98,
+          "logistics_score": 0.55,
+          "difficulty": 0.7,
+          "note": "몰입도 최상이나 그물 방해가 전반적으로 심함. 시야 중시자에게 비권장.",
+          "confidence": 0.88
+        },
+        {
+          "id": "daegu_sky_lower_3b",
+          "grade": "SKY 하단 지정석",
+          "zone": "3루측",
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": true,
+          "tier": "upper",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "none",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "1-3열 (유리난간), 4열 (통로 앞 통행), 9열 5-10번 (난간)",
+          "sweet_rows": "13-23열 (천장 있음 - 우천/직사광 대피 최적)",
+          "view_score": 0.8,
+          "immersion_score": 0.55,
+          "logistics_score": 0.5,
+          "difficulty": 0.45,
+          "note": "13열 이후 천장 구간이 우천 리스크 시 1순위. 실측으로 확정.",
+          "confidence": 0.92
+        },
+        {
+          "id": "daegu_sky_lower_center",
+          "grade": "SKY 하단 지정석",
+          "zone": "중앙",
+          "side": "CENTER",
+          "is_cheer_zone": false,
+          "is_covered": true,
+          "tier": "upper",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "none",
+            "net": "none",
+            "cheer_stage": "none",
+            "camera": "partial"
+          },
+          "avoid_rows": "1-3열 (유리난간 극심), 4열 (통로), 4-6열 (중계 카메라가 홈을 가림)",
+          "sweet_rows": "7열 이후",
+          "view_score": 0.72,
+          "immersion_score": 0.55,
+          "logistics_score": 0.52,
+          "difficulty": 0.48,
+          "note": "중계 카메라 간섭 구간이 명확히 4-6열.",
+          "confidence": 0.9
+        },
+        {
+          "id": "daegu_of_reserved",
+          "grade": "외야 지정석",
+          "side": "OF",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "lower",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "none",
+            "net": "none",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "1-4열 (펜스 방해 극심)",
+          "sweet_rows": "5열 이후",
+          "view_score": 0.55,
+          "immersion_score": 0.42,
+          "logistics_score": 0.6,
+          "difficulty": 0.25,
+          "note": "기둥·그물 간섭 전무. 5열 이후면 의외로 깨끗한 시야.",
+          "confidence": 0.9
+        }
+      ],
+      "sky_zone_map": {
+        "range": "1-31",
+        "direction": "1구역이 1루(원정)측, 31구역이 3루(홈)측",
+        "samsung_fan_target": "20-31구역 (3루측)",
+        "confidence": 0.92
+      },
+      "bearing_status": "미검증 - 67.5도는 MLB 권장 방위에서 역산한 값이며, 1루 직사광 현장 보고와 모순됨. 위성뷰 재측정 필요."
+    },
+    "jamsil": {
+      "name": "서울 잠실야구장",
+      "aliases": [
+        "잠실",
+        "잠실구장"
+      ],
+      "home_team": "LG 트윈스 / 두산 베어스",
+      "ticketing_site": "티켓링크",
+      "ticketing_site_note": "LG 홈경기 티켓링크 확인(2026.08). 두산 홈경기 예매처는 별도 확인 필요.",
+      "lat": 37.5122,
+      "lon": 127.0719,
+      "coord_confidence": 0.85,
+      "home_to_center_bearing": 202.5,
+      "bearing_confidence": 0.86,
+      "home_cheer_side": "1B",
+      "away_cheer_side": "3B",
+      "facing": {
+        "1B": 112.5,
+        "3B": 292.5,
+        "CENTER": 202.5,
+        "OF": 22.5
+      },
+      "seat_numbering": {
+        "pattern": "블록 + 열 + 번",
+        "example": "331블록 13열 182번 / 414블록 12열 200번",
+        "note": "블록 내 좌석번호가 200번대까지. 라팍의 구역 체계와 완전히 다름."
+      },
+      "block_map": {
+        "1F": "101-111 (1루측), 112-122 (3루측)",
+        "2F": "201-213 (1루측), 214-226 (3루측)",
+        "3F": "301-314 (1루측), 315-334 (3루측)",
+        "OF": "401-422 (411/412 사이에 전광판)"
+      },
+      "global_notes": [
+        "삼성 원정 시 3루측이 원정 응원석",
+        "3루측은 낮경기 내내 직사광 - 잠실 최대 약점",
+        "1루(홈) 계열이 먼저 매진되는 경향. 원정 팬에게는 구조적으로 유리",
+        "모바일 티켓 3루 예매자는 6번 출구, 그 외 5번 출구가 빠름"
+      ],
+      "blocks": [
+        {
+          "id": "jamsil_orange_219",
+          "grade": "3루 오렌지석(응원석)",
+          "block": 219,
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "2F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": null,
+          "avoid_rows": null,
+          "view_score": 0.7,
+          "immersion_score": 0.9,
+          "logistics_score": 0.6,
+          "difficulty": 0.75,
+          "note": "실측 미기록. 220-222 패턴상 앞열 응원단상 간섭 추정.",
+          "confidence": 0.6
+        },
+        {
+          "id": "jamsil_orange_220",
+          "grade": "3루 오렌지석(응원석)",
+          "block": 220,
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "2F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "blocked"
+          },
+          "avoid_rows": "1-4열 (응원단상·스피커 방해 심각)",
+          "caution_rows": "5열",
+          "sweet_rows": "6열 이후",
+          "view_score": 0.66,
+          "immersion_score": 0.94,
+          "logistics_score": 0.6,
+          "difficulty": 0.86,
+          "note": "응원 몰입 최상 구역이나 1-4열은 절대 회피.",
+          "confidence": 0.92
+        },
+        {
+          "id": "jamsil_orange_221",
+          "grade": "3루 오렌지석(응원석)",
+          "block": 221,
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "2F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "partial"
+          },
+          "avoid_rows": "1-6열 (응원단상 간섭)",
+          "sweet_rows": "7열 이후",
+          "view_score": 0.78,
+          "immersion_score": 0.92,
+          "logistics_score": 0.62,
+          "difficulty": 0.84,
+          "note": "외야 시야가 매우 좋음. 오렌지석 중 종합 1순위.",
+          "confidence": 0.92
+        },
+        {
+          "id": "jamsil_orange_222",
+          "grade": "3루 오렌지석(응원석)",
+          "block": 222,
+          "side": "3B",
+          "is_cheer_zone": true,
+          "is_covered": false,
+          "tier": "2F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "1-5열 (펜스 시야 차단 - 최악)",
+          "sweet_rows": "6열 이후",
+          "view_score": 0.62,
+          "immersion_score": 0.88,
+          "logistics_score": 0.6,
+          "difficulty": 0.8,
+          "note": "앞열 펜스 차단이 오렌지석 중 가장 심함.",
+          "confidence": 0.92
+        },
+        {
+          "id": "jamsil_red_3b",
+          "grade": "3루 레드석",
+          "blocks": [
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            223,
+            224,
+            225,
+            226
+          ],
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "1F/2F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "blocked",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "1-10열 (그물 간섭 심함), 118블록 1열 1번 (앞 기둥), 223-226블록 1-3열 (유리펜스 + 통행)",
+          "sweet_rows": "11열 이후",
+          "view_score": 0.7,
+          "immersion_score": 0.82,
+          "logistics_score": 0.66,
+          "difficulty": 0.6,
+          "note": "잔여 물량 최다 등급. 11열 이후면 안전판으로 우수.",
+          "confidence": 0.9
+        },
+        {
+          "id": "jamsil_blue_114",
+          "grade": "3루 블루석",
+          "block": 114,
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "1F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "none",
+            "net": "blocked",
+            "cheer_stage": "blocked"
+          },
+          "avoid_rows": "전열",
+          "sweet_rows": null,
+          "view_score": 0.3,
+          "immersion_score": 0.95,
+          "logistics_score": 0.55,
+          "difficulty": 0.7,
+          "note": "그물·응원단상 전열 차단. 시야 목적으로는 배제.",
+          "confidence": 0.9
+        },
+        {
+          "id": "jamsil_blue_115",
+          "grade": "3루 블루석",
+          "block": 115,
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "1F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "none",
+            "net": "blocked",
+            "cheer_stage": "blocked"
+          },
+          "avoid_rows": "전열",
+          "sweet_rows": null,
+          "view_score": 0.3,
+          "immersion_score": 0.95,
+          "logistics_score": 0.55,
+          "difficulty": 0.7,
+          "note": "114블록과 동일. 배제 권고.",
+          "confidence": 0.9
+        },
+        {
+          "id": "jamsil_blue_116",
+          "grade": "3루 블루석",
+          "block": 116,
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "1F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "blocked"
+          },
+          "avoid_rows": "1-11열 (기둥), 1열 2-3번 (바로 앞 기둥), 전열 응원단상 간섭",
+          "sweet_rows": "12열 이후",
+          "view_score": 0.42,
+          "immersion_score": 0.95,
+          "logistics_score": 0.55,
+          "difficulty": 0.7,
+          "note": "12열 이후는 블루석 중 그나마 양호.",
+          "confidence": 0.9
+        },
+        {
+          "id": "jamsil_blue_216_218",
+          "grade": "3루 블루석",
+          "blocks": [
+            216,
+            217,
+            218
+          ],
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "2F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": null,
+          "avoid_rows": null,
+          "view_score": 0.65,
+          "immersion_score": 0.85,
+          "logistics_score": 0.62,
+          "difficulty": 0.68,
+          "note": "실측 미기록. 2층이라 1층 블루석보다 그물 간섭 적을 것으로 추정.",
+          "confidence": 0.55
+        },
+        {
+          "id": "jamsil_navy_center",
+          "grade": "3루 네이비석(중앙)",
+          "blocks": [
+            316,
+            317,
+            318,
+            319
+          ],
+          "side": "CENTER",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "3F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "none",
+            "net": "partial",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "1-3열 (유리펜스 간섭)",
+          "sweet_rows": "4열 이후",
+          "view_score": 0.92,
+          "immersion_score": 0.6,
+          "logistics_score": 0.5,
+          "difficulty": 0.58,
+          "note": "실측 평가 '시야 너무 좋음'. 잠실 낮경기 삼성 팬의 그늘 겸 시야 최적해.",
+          "confidence": 0.94
+        },
+        {
+          "id": "jamsil_navy_3b",
+          "grade": "3루 네이비석",
+          "blocks": [
+            320,
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334
+          ],
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "3F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "partial",
+            "net": "partial",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "1-3열 (유리펜스 + 통행 간섭)",
+          "sweet_rows": "8열 이후 (낮경기 그늘 시작 지점)",
+          "view_score": 0.84,
+          "immersion_score": 0.58,
+          "logistics_score": 0.48,
+          "difficulty": 0.5,
+          "note": "잔여 물량 최대. 낮경기 3루 그늘 회피의 유일한 실질 대안.",
+          "confidence": 0.92
+        },
+        {
+          "id": "jamsil_table_3b",
+          "grade": "3루 테이블석(SOL 판타지 야구존)",
+          "blocks": [
+            112,
+            113,
+            214,
+            215
+          ],
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "1F/2F",
+          "party_fit": [
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "none",
+            "net": "partial",
+            "cheer_stage": "blocked"
+          },
+          "avoid_rows": "전열 응원단상 간섭",
+          "sweet_rows": null,
+          "view_score": 0.8,
+          "immersion_score": 0.78,
+          "logistics_score": 0.88,
+          "difficulty": 0.95,
+          "note": "실측 평가 '탁 트인 시야'. 다만 시즌권 선점으로 잔여 0석인 경우가 대부분.",
+          "confidence": 0.88
+        },
+        {
+          "id": "jamsil_exciting_3b",
+          "grade": "3루 익사이팅석",
+          "side": "3B",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "field",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": null,
+          "avoid_rows": null,
+          "view_score": 0.5,
+          "immersion_score": 0.98,
+          "logistics_score": 0.55,
+          "difficulty": 0.9,
+          "note": "블록 번호 미확인. 물량 극소.",
+          "confidence": 0.5
+        },
+        {
+          "id": "jamsil_green_of",
+          "grade": "외야 그린석",
+          "blocks": [
+            402,
+            403,
+            404,
+            409,
+            410,
+            411,
+            413,
+            414,
+            415,
+            416
+          ],
+          "side": "OF",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "1F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": null,
+          "surveyed_obstruction": {
+            "pillar": "none",
+            "net": "none",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "1열 (펜스 약간)",
+          "sweet_rows": "2열 이후",
+          "view_score": 0.58,
+          "immersion_score": 0.45,
+          "logistics_score": 0.58,
+          "difficulty": 0.3,
+          "note": "간섭 거의 없음. 최후 안전판으로 우수.",
+          "confidence": 0.88
+        },
+        {
+          "id": "jamsil_green_of_warned",
+          "grade": "외야 그린석(시야방해 표기 구역)",
+          "blocks": [
+            412,
+            417,
+            418,
+            419,
+            420,
+            421,
+            422
+          ],
+          "side": "OF",
+          "is_cheer_zone": false,
+          "is_covered": false,
+          "tier": "1F",
+          "party_fit": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "official_view_warning": {
+            "412": "중계카메라로 인한 시야방해석",
+            "417-422": "안전유리 설치로 인한 시야방해석",
+            "421": "홈런볼대로 인한 시야방해석"
+          },
+          "surveyed_obstruction": {
+            "pillar": "none",
+            "net": "none",
+            "cheer_stage": "none"
+          },
+          "avoid_rows": "예매처 표기 구역 전체",
+          "view_score": 0.35,
+          "immersion_score": 0.45,
+          "logistics_score": 0.58,
+          "difficulty": 0.2,
+          "note": "티켓링크가 좌석도에 직접 시야방해를 명시한 구역. 가격 대비 판단 필요.",
+          "confidence": 0.95
+        }
+      ],
+      "shade_summary": "4-8월 전 시간대 3루 직사광 고정. 9월 이후 경계. 사실상 상수이므로 실시간 계산 불필요."
+    }
+  },
+  "_todo": [
+    "잠실 219블록, 216-218블록, 3루 익사이팅석 실측 필요 (confidence 0.6 미만)",
+    "잠실 3루 익사이팅석 블록 번호 확인",
+    "두산 홈경기 예매처 확인",
+    "라팍 정밀 위경도 좌표 확인 (현재 0.70)",
+    "라팍 등급-구역 번호 대응 확정 (블루존 구역 번호가 티켓링크 표기와 일치하는지)",
+    "difficulty 값 전체 - v3 예매 로그로 재보정",
+    "구단 요금표 반영한 price 필드 추가"
+  ]
+}
